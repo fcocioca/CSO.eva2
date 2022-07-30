@@ -6,7 +6,7 @@
 <form method="post" action="{{route('agregarPro')}}">
 <div class="mb-3">
     <label for="txtCodigo" class="form-label">Codigo Producto:</label>
-    <input type="text" class="form-control" id="txtCodigo" placeholder="THX1138" name="txtNombre" >
+    <input type="text" class="form-control" id="txtCodigo" placeholder="THX1138" name="txtCodigo" >
   </div>
   <div class="mb-3">
     <label for="txtNombre" class="form-label">Nombre Producto:</label>
