@@ -3,7 +3,7 @@
 <br>
 <p>Ingresa productos</p>
 
-<form method="post" action="">
+<form method="post" action="{{route('agregarPro')}}">
 <div class="mb-3">
     <label for="txtCodigo" class="form-label">Codigo Producto:</label>
     <input type="text" class="form-control" id="txtCodigo" placeholder="THX1138" name="txtNombre" >

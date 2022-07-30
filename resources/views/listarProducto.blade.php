@@ -23,7 +23,7 @@
   
       <tr>
         <td>thx1138</td>
-        <td>PANCITO </td>
+        <td>Pancito</td>
         <td>5000</td>
         <td>Alimentos</td>
         <td>Alonso de Cordoba</td>
