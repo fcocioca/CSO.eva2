@@ -15,7 +15,7 @@ class InsertaSucursales extends Seeder
      */
     public function run()
     {
-        DB:table('sucursales')->insert(array(
+        DB::table('sucursales')->insert(array(
             [
             'nombreSucursal'=>'Casa Matriz',
             'direccion'=>'Alonso de Cordoba 8991 - Las Condes'

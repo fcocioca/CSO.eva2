@@ -15,7 +15,7 @@ class InsertaCategoria extends Seeder
      */
     public function run()
     {
-        DB:table('categorias')->insert(array(
+        DB::table('categorias')->insert(array(
             [
             'nombreCategoria'=>'Alimentos'
             ],
