@@ -1,9 +1,10 @@
 @extends('layouts.master')
+@section('title','Ingresa Productos')
 @section('content')
 <br>
 <p>Ingresa productos</p>
 
-<form method="post" action="{{route('agregarPro')}}">
+<form method="post" action="{{ url('productos')}}">
 <div class="mb-3">
     <label for="txtCodigo" class="form-label">Codigo Producto:</label>
     <input type="text" class="form-control" id="txtCodigo" placeholder="THX1138" name="txtCodigo" >
@@ -37,6 +38,10 @@
   <div class="mb-3">
     <label for="txtCantidad" class="form-label">Cantidad:</label>
     <input type="number" class="form-control" id="txtCantidad" placeholder="9999" name="txtCantidad" >
+  </div>
+  <div class="mb-3">
+    <label for="txtDesc" class="form-label">Descripcion:</label>
+    <input type="text" class="form-control" id="txtDesc" placeholder="Escriba una descripcion para el producto" name="txtDesc" >
   </div>
   <!-- <div class="form-check mb-3"> -->
 

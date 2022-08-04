@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Producto;
+use App\Models\Sucursal;
 
 class rutasController extends Controller
 {
@@ -17,11 +19,20 @@ class rutasController extends Controller
         return view('/ingresaP');        
     }
     public function showbodega () {
-        return view('/bodega')
-        ->with('sucursal',"Mi Bodega");       
+        $sucursales = Sucursal::get();
+        return view('/bodega',[
+        'sucursales'=>$sucursales
+        ]);       
+        
     }
     public function showlistarproducto () {
-        return view('/listarProducto')
-        ->with('arrayProducto',array('1','2','3','4','5'));     
+        $productos = Producto::get();
+        
+        return view('/listarProducto',[
+            'productos'=>$productos
+
+
+        ]);
+             
     }
 }

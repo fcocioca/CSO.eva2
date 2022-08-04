@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title','Inicio')
 @section('content')
 <br>
 <div class="container p-5 my-5 border">

@@ -34,10 +34,15 @@ use App\Http\Controllers\productosController;
 Route::get('/index', [rutasController::class, 'showindex']);
 Route::get('/', [rutasController::class, 'showindex']);
 Route::get('/listarProducto', [rutasController::class, 'showlistarproducto']);
-Route::get('/bodega/{sucursal?}/{direccion?}', [rutasController::class, 'showbodega']);
+Route::get('/bodega', [rutasController::class, 'showbodega']);
 Route::get('/ingresaP', [rutasController::class, 'showIngresaP']);
 Route::get('/eliminaP', [rutasController::class, 'showeliminaP']);
-Route::post('agregaP', [
-     'uses' => 'App\Http\Controllers\productosController@agregarProducto',
-     'as' => 'agregarPro'
- ]);
+// Route::post('agregaP', [
+//      'uses' => 'App\Http\Controllers\productosController@agregarProducto',
+//      'as' => 'agregarPro'
+//  ]);
+
+Route::resource('productos',productosController::class);
+Route::resource('sucursales',productosController::class);
+
+
